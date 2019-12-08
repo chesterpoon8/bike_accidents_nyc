@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Introduction</h3>
+
+<p>Biking in NYC has been on the rise especially since the establishment of Citibike in 2013.
+  Unfortunately, with the rise in bike ridership, there is also a rise in cyclist related accidents.
+  Particularly this year, there appears to be a rise in fatal cyclist accidents
+  despite the increase in cyclist and pedestrian infrastructure throughout the city.
+  I also have a personal investment in this as a regular bike commuter myself.
+</p>
+
+<p>A deep dive into the data would provide insight into where
+  cyclist infrastructure could either be constructed or improved
+  upon depending on two main factors: the frequency of cyclist related
+  accidents in different municipal locations as well as the most commonly
+  used cyclist routes in the city. A closer look at where
+  currently established bike lanes exist including the type should also provide
+  useful insight.
+</p>
+
+<h3>The Data</h3>
+<h4>Bike Census and Common Routes</h4>
+<p>To get a census of ridership, the CitiBike system data will be used as
+  a proxy. Though not perfect, this should serve as a decent substitute for
+  the overall bike commuter population in NYC. To get a sense of where these
+  bikes are going, I'll be going under an assumption and will be using the
+  Mapbox Directions API to find common routes.
+</p>
+
+<h4>Bike Lanes</h4>
+<p>I'll be getting bicycle lane data from NYC OpenData and differentiate the
+  protected vs. unprotected lanes.
+</p>
+
+<h4>Accident Data</h4>
+<p>Bicycle related accidents will come from NYC OpenData and is defined as
+  accidents that have at least 1 injured or killed cyclist. 
+</p>
+
+<h3>Citibike Trips by Day Since May 28, 2013</h3>
+
+<p>The below graph shows CitiBike trips by day.  We can immediately see that there
+  are more bikes on the road with each passing year. We can also see significant
+  seasonality of bike use where the peak is in the summer and the low in the winter.
+</p>
+
+<iframe src="/static/fig.html" width="1084" height="620"></iframe>
+
+{% endblock %}

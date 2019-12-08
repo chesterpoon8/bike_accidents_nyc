@@ -1,0 +1,35 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - NYC Bike Accidents</title>
+      {% else %}
+      <title>NYC Bike Accidents</title>
+      {% endif %}
+      <link rel="stylesheet" href="/static/style.css">
+      <link rel="shortcut icon" type="image/png" href="/static/bike.png"/>
+    </head>
+    <body>
+      <div id="first_pg" title="Image Credit: Aubri Juhasz/NPR">
+        <div class="home_image">
+          <img src="static/ghost-bike.jpg">
+        </div>
+        <div class="home_title">
+          <h1>NYC Bike Accidents</h1>
+          <h1>{{ title }}</h1>
+          <div id="header">
+            <a href="{{ url_for('index') }}" class="button">Introduction</a>
+            <a href="{{ url_for('by_month') }}" class="button">Accidents by Month</a>
+            <a href="{{ url_for('by_hour') }}" class="button">Accidents by Time of Day</a>
+            <a href="{{ url_for('map') }}" class="button">Map</a>
+            <a href="{{ url_for('data_src') }}" class="button">Data Sources</a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+      {% block content %}{% endblock %}
+      </div>
+    </body>
+    <br>
+    <hr>
+    <footer>By: Chester Poon</footer>
+</html>

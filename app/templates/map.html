@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+</p><h3>NYC Map and the Most Dangerous Intersections</h3>
+<p>This map shows the location of all bicycle related accidents overlayed
+  with the location of protected and unprotected bicycle lanes as well as
+  the most likely frequent routes taken by Citibike riders. There are also map
+  markers that indicate the most dangerous intersections in NYC, which is any
+  intersection with 10 or more accidents since the summer of 2012.
+  You can toggle through the various layers by hovering over the icon on
+  the top right corner of the map.
+</p>
+<p>The table on the right lists the most dangerous intersections in NYC
+</p>
+
+<iframe class="mapdata" height="700" src="/static/map_nyc.html" width="700"></iframe>
+<iframe class="mapdata" height="700" src="/static/crash_table.html" width="500"></iframe>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Bicycle Accidents by Hour of Day</h3>
+
+<p>We can look over the trends by hour of day for each month to see if
+  there are any patterns to when accidents occur. Immediately we notice
+  that rush hour is a big culprit, but even more interesting is that
+  accidents tend to occur the most during the evening rush. Of course,
+  accidents are more frequent during the summer months since ridership
+  is higher. This introduces an interesting question: why are there more
+  accidents during the evening rush than there are during say the morning
+  rush? My own personal insight as a bike commuter could be valuable
+  in answering this question as I do notice far more aggressive driving from
+  cars during this time than in the morning.
+</p>
+
+
+<iframe src="/static/hr_fig.html" width="1084" height="620"></iframe>
+
+{% endblock %}

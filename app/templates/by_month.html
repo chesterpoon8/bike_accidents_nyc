@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Bicycle Accidents by Month Over Each Year</h3>
+
+<p>It's useful to see the number of accidents over the course
+  of each month by year. We can observe the seasonality per year
+  and also how the frequency of accidents change over the course
+  of the year. It's easy to see that the most dangerous months are in the
+  summer, which makes sense considering that ridership is at the highest
+  during that time of the year. You can also see as the years pass, 
+  that the number of accidents overall appear to increase.
+</p>
+
+<iframe src="/static/mo_fig.html" width="1084" height="620"></iframe>
+
+{% endblock %}
