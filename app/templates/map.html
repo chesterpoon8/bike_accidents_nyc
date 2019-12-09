@@ -2,19 +2,23 @@
 
 {% block content %}
 
-</p><h3>NYC Map and the Most Dangerous Intersections</h3>
+<h3>NYC Map and the Most Dangerous Intersections</h3>
 <p>This map shows the location of all bicycle related accidents overlayed
-  with the location of protected and unprotected bicycle lanes as well as
-  the most likely frequent routes taken by Citibike riders. There are also map
-  markers that indicate the most dangerous intersections in NYC, which is any
-  intersection with 10 or more accidents since the summer of 2012.
-  You can toggle through the various layers by hovering over the icon on
+  with the location of protected and unprotected bicycle lanes. You can toggle
+  through other overlay features by hovering over the icon on
   the top right corner of the map.
 </p>
-<p>The table on the right lists the most dangerous intersections in NYC
-</p>
 
-<iframe class="mapdata" height="700" src="/static/map_nyc.html" width="700"></iframe>
-<iframe class="mapdata" height="700" src="/static/crash_table.html" width="500"></iframe>
+<iframe height="700" src="/static/map_nyc.html" width="1200"></iframe>
+<br>
+
+<h3>Most Dangerous Intersections</h3>
+
+<p>This table lists the most dangerous intersections in NYC, which is
+  defined as any intersection with 10 or more accidents since the summer
+  of 2012.</p>
+
+<iframe class="mapdata" height="300" src="/static/crash_table.html" width="500"></iframe>
+<iframe name="iframe_map" class="mapdata" height="300" src="../static/crash_maps/MANHATTANCHRYSTIE_STREET_&_DELANCEY_STREET.html" width="700"></iframe>
 
 {% endblock %}

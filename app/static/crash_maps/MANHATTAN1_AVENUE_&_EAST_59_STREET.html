@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8abd8c77d93b4ad2991ac6ab5181b761 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8abd8c77d93b4ad2991ac6ab5181b761" ></div>
+        
+</body>
+<script>    
+    
+            var map_8abd8c77d93b4ad2991ac6ab5181b761 = L.map(
+                "map_8abd8c77d93b4ad2991ac6ab5181b761",
+                {
+                    center: [40.75962, -73.96196],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7669791e9b5f426693c69757ab3bd67b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8abd8c77d93b4ad2991ac6ab5181b761);
+        
+    
+            var marker_d713ea9c6066400d85fae59e6bf08821 = L.marker(
+                [40.75962, -73.96196],
+                {}
+            ).addTo(map_8abd8c77d93b4ad2991ac6ab5181b761);
+        
+    
+            var icon_3b0e981c2faf427caab93a01e0410607 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d713ea9c6066400d85fae59e6bf08821.setIcon(icon_3b0e981c2faf427caab93a01e0410607);
+        
+    
+            marker_d713ea9c6066400d85fae59e6bf08821.bindTooltip(
+                `<div>
+                     1 AVENUE & EAST 59 STREET:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9c6cd2ff6b64a92837b79636cfe466b = L.marker(
+                [40.75962, -73.96197],
+                {}
+            ).addTo(map_8abd8c77d93b4ad2991ac6ab5181b761);
+        
+    
+            var icon_81b6d39b597344d49b1b688bd8ee3095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b9c6cd2ff6b64a92837b79636cfe466b.setIcon(icon_81b6d39b597344d49b1b688bd8ee3095);
+        
+    
+            marker_b9c6cd2ff6b64a92837b79636cfe466b.bindTooltip(
+                `<div>
+                     1 AVENUE & EAST 59 STREET:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

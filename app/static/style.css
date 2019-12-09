@@ -25,7 +25,6 @@ table tr:nth-child(even) {
 }
 table tr:hover {
   background-color:#03fcf8;
-  cursor: pointer;
 }
 
 table thead {

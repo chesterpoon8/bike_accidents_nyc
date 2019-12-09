@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9ee00cdf45d43de9fb4f7d5c566683b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e9ee00cdf45d43de9fb4f7d5c566683b" ></div>
+        
+</body>
+<script>    
+    
+            var map_e9ee00cdf45d43de9fb4f7d5c566683b = L.map(
+                "map_e9ee00cdf45d43de9fb4f7d5c566683b",
+                {
+                    center: [40.75738, -73.9667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54d4aa8ce1bc46da8d2ba5911d6ef338 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9ee00cdf45d43de9fb4f7d5c566683b);
+        
+    
+            var marker_86ec178a89484fdc91e29cbb18cf6a00 = L.marker(
+                [40.75738, -73.9667],
+                {}
+            ).addTo(map_e9ee00cdf45d43de9fb4f7d5c566683b);
+        
+    
+            var icon_2dba6684e91e4355af892b8695b1bfce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_86ec178a89484fdc91e29cbb18cf6a00.setIcon(icon_2dba6684e91e4355af892b8695b1bfce);
+        
+    
+            marker_86ec178a89484fdc91e29cbb18cf6a00.bindTooltip(
+                `<div>
+                     2 AVENUE & EAST 54 STREET:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf96fc75e0d45fd8ea1d0ae1c3d91e6 = L.marker(
+                [40.75738, -73.96671],
+                {}
+            ).addTo(map_e9ee00cdf45d43de9fb4f7d5c566683b);
+        
+    
+            var icon_6ac92f0c7f7b453883aac2ad50dd04de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bbf96fc75e0d45fd8ea1d0ae1c3d91e6.setIcon(icon_6ac92f0c7f7b453883aac2ad50dd04de);
+        
+    
+            marker_bbf96fc75e0d45fd8ea1d0ae1c3d91e6.bindTooltip(
+                `<div>
+                     2 AVENUE & EAST 54 STREET:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

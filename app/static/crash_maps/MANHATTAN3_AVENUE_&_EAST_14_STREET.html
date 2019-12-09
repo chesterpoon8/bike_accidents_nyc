@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f4961b6ade84f8bb65db0ac859845f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5f4961b6ade84f8bb65db0ac859845f3" ></div>
+        
+</body>
+<script>    
+    
+            var map_5f4961b6ade84f8bb65db0ac859845f3 = L.map(
+                "map_5f4961b6ade84f8bb65db0ac859845f3",
+                {
+                    center: [40.73329, -73.98718],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9a5ec0e7211f4c5490bd075bae49f7b0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5f4961b6ade84f8bb65db0ac859845f3);
+        
+    
+            var marker_6722f50303a14338a974671df69af80c = L.marker(
+                [40.73329, -73.98718],
+                {}
+            ).addTo(map_5f4961b6ade84f8bb65db0ac859845f3);
+        
+    
+            var icon_92412b01747c445686e86ad10b31131c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6722f50303a14338a974671df69af80c.setIcon(icon_92412b01747c445686e86ad10b31131c);
+        
+    
+            marker_6722f50303a14338a974671df69af80c.bindTooltip(
+                `<div>
+                     3 AVENUE & EAST 14 STREET:	16 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1a9dd0c612845fe9d0eecfccaa323c2 = L.marker(
+                [40.73235, -73.98494],
+                {}
+            ).addTo(map_5f4961b6ade84f8bb65db0ac859845f3);
+        
+    
+            var icon_b6cc0c5988f6408e881e3241acba8022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1a9dd0c612845fe9d0eecfccaa323c2.setIcon(icon_b6cc0c5988f6408e881e3241acba8022);
+        
+    
+            marker_f1a9dd0c612845fe9d0eecfccaa323c2.bindTooltip(
+                `<div>
+                     3 AVENUE & EAST 14 STREET:	16 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bc89d66af904f23a48b0f6a73dfa24f = L.marker(
+                [40.73329, -73.98719],
+                {}
+            ).addTo(map_5f4961b6ade84f8bb65db0ac859845f3);
+        
+    
+            var icon_7bae99677a564f429d86b766c34b0f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5bc89d66af904f23a48b0f6a73dfa24f.setIcon(icon_7bae99677a564f429d86b766c34b0f8d);
+        
+    
+            marker_5bc89d66af904f23a48b0f6a73dfa24f.bindTooltip(
+                `<div>
+                     3 AVENUE & EAST 14 STREET:	16 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

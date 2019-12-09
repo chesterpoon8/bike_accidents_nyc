@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2fee026182ac448fa586f62f4a266603 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2fee026182ac448fa586f62f4a266603" ></div>
+        
+</body>
+<script>    
+    
+            var map_2fee026182ac448fa586f62f4a266603 = L.map(
+                "map_2fee026182ac448fa586f62f4a266603",
+                {
+                    center: [40.73987, -73.98958],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f224c061afb44c6982ad7e83415ea802 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2fee026182ac448fa586f62f4a266603);
+        
+    
+            var marker_f9c98bed596742adb28c2147d677e90b = L.marker(
+                [40.73987, -73.98958],
+                {}
+            ).addTo(map_2fee026182ac448fa586f62f4a266603);
+        
+    
+            var icon_85a57b34035b43e38f5d37df983b5d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f9c98bed596742adb28c2147d677e90b.setIcon(icon_85a57b34035b43e38f5d37df983b5d64);
+        
+    
+            marker_f9c98bed596742adb28c2147d677e90b.bindTooltip(
+                `<div>
+                     BROADWAY & EAST 21 STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6705cb1c7e041aeb7298a2e0f4c39c0 = L.marker(
+                [40.73986, -73.98959],
+                {}
+            ).addTo(map_2fee026182ac448fa586f62f4a266603);
+        
+    
+            var icon_23bdcf63c41040af809787c0e561ded1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e6705cb1c7e041aeb7298a2e0f4c39c0.setIcon(icon_23bdcf63c41040af809787c0e561ded1);
+        
+    
+            marker_e6705cb1c7e041aeb7298a2e0f4c39c0.bindTooltip(
+                `<div>
+                     BROADWAY & EAST 21 STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

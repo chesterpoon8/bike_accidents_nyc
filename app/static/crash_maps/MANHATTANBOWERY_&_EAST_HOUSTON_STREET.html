@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0441b35c53084d1b8cadcaf060cd61bb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0441b35c53084d1b8cadcaf060cd61bb" ></div>
+        
+</body>
+<script>    
+    
+            var map_0441b35c53084d1b8cadcaf060cd61bb = L.map(
+                "map_0441b35c53084d1b8cadcaf060cd61bb",
+                {
+                    center: [40.72414, -73.9926],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3c5192eae4b448fb6688714b7c8f2ad = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0441b35c53084d1b8cadcaf060cd61bb);
+        
+    
+            var marker_0d40732a31504048b7bb938d61acacae = L.marker(
+                [40.72414, -73.9926],
+                {}
+            ).addTo(map_0441b35c53084d1b8cadcaf060cd61bb);
+        
+    
+            var icon_74a4595a1abd4a53955f87b8475dac97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0d40732a31504048b7bb938d61acacae.setIcon(icon_74a4595a1abd4a53955f87b8475dac97);
+        
+    
+            marker_0d40732a31504048b7bb938d61acacae.bindTooltip(
+                `<div>
+                     BOWERY & EAST HOUSTON STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ee650f29c244b3da1d23cf48e6668c8 = L.marker(
+                [40.72414, -73.99262],
+                {}
+            ).addTo(map_0441b35c53084d1b8cadcaf060cd61bb);
+        
+    
+            var icon_1408f893f56b4506a2d04a448215b31a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9ee650f29c244b3da1d23cf48e6668c8.setIcon(icon_1408f893f56b4506a2d04a448215b31a);
+        
+    
+            marker_9ee650f29c244b3da1d23cf48e6668c8.bindTooltip(
+                `<div>
+                     BOWERY & EAST HOUSTON STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

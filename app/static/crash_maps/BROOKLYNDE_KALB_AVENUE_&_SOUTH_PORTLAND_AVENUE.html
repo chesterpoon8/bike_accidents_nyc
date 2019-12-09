@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e11f22c97f1f453eb9478c34eeec025c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e11f22c97f1f453eb9478c34eeec025c" ></div>
+        
+</body>
+<script>    
+    
+            var map_e11f22c97f1f453eb9478c34eeec025c = L.map(
+                "map_e11f22c97f1f453eb9478c34eeec025c",
+                {
+                    center: [40.6897, -73.9751],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c00ef3a80de544e9a0b43d3dd0994952 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e11f22c97f1f453eb9478c34eeec025c);
+        
+    
+            var marker_8c445a81e2c24fec8487a1ef70b7b212 = L.marker(
+                [40.6897, -73.9751],
+                {}
+            ).addTo(map_e11f22c97f1f453eb9478c34eeec025c);
+        
+    
+            var icon_e401262ac1f44764a9fb3a15403e89f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8c445a81e2c24fec8487a1ef70b7b212.setIcon(icon_e401262ac1f44764a9fb3a15403e89f7);
+        
+    
+            marker_8c445a81e2c24fec8487a1ef70b7b212.bindTooltip(
+                `<div>
+                     DE KALB AVENUE & SOUTH PORTLAND AVENUE:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cf0735c6b1243b89f066f06f87645ae = L.marker(
+                [40.7136, -74.0091],
+                {}
+            ).addTo(map_e11f22c97f1f453eb9478c34eeec025c);
+        
+    
+            var icon_8d5073bc91a84ef3a95919de7a01bf3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2cf0735c6b1243b89f066f06f87645ae.setIcon(icon_8d5073bc91a84ef3a95919de7a01bf3c);
+        
+    
+            marker_2cf0735c6b1243b89f066f06f87645ae.bindTooltip(
+                `<div>
+                     DE KALB AVENUE & SOUTH PORTLAND AVENUE:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ed6d308d6ce47179826de042a1cc4fa = L.marker(
+                [40.6897, -73.97511],
+                {}
+            ).addTo(map_e11f22c97f1f453eb9478c34eeec025c);
+        
+    
+            var icon_14848ef9a44e4a50830afee690a2726d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0ed6d308d6ce47179826de042a1cc4fa.setIcon(icon_14848ef9a44e4a50830afee690a2726d);
+        
+    
+            marker_0ed6d308d6ce47179826de042a1cc4fa.bindTooltip(
+                `<div>
+                     DE KALB AVENUE & SOUTH PORTLAND AVENUE:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fae26c5ce754a26891afe536b9409a5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5fae26c5ce754a26891afe536b9409a5" ></div>
+        
+</body>
+<script>    
+    
+            var map_5fae26c5ce754a26891afe536b9409a5 = L.map(
+                "map_5fae26c5ce754a26891afe536b9409a5",
+                {
+                    center: [40.74847, -73.99246],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ceddb89b8aae48b9a6c9ca74c671916d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5fae26c5ce754a26891afe536b9409a5);
+        
+    
+            var marker_e7a5ba4436fd45b3b817ad9edfe03dda = L.marker(
+                [40.74847, -73.99246],
+                {}
+            ).addTo(map_5fae26c5ce754a26891afe536b9409a5);
+        
+    
+            var icon_0b140a2a11d949e68868dc3537addbd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e7a5ba4436fd45b3b817ad9edfe03dda.setIcon(icon_0b140a2a11d949e68868dc3537addbd5);
+        
+    
+            marker_e7a5ba4436fd45b3b817ad9edfe03dda.bindTooltip(
+                `<div>
+                     7 AVENUE & WEST 30 STREET:	12 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cec7a8b9df84cad85ee5fcbbd9c6a42 = L.marker(
+                [40.74847, -73.99247],
+                {}
+            ).addTo(map_5fae26c5ce754a26891afe536b9409a5);
+        
+    
+            var icon_d09328321f044fa582c274df07cb24ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9cec7a8b9df84cad85ee5fcbbd9c6a42.setIcon(icon_d09328321f044fa582c274df07cb24ed);
+        
+    
+            marker_9cec7a8b9df84cad85ee5fcbbd9c6a42.bindTooltip(
+                `<div>
+                     7 AVENUE & WEST 30 STREET:	12 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

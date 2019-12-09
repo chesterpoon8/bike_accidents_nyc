@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50a0f5802a15495aa3ab31427c4399d5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_50a0f5802a15495aa3ab31427c4399d5" ></div>
+        
+</body>
+<script>    
+    
+            var map_50a0f5802a15495aa3ab31427c4399d5 = L.map(
+                "map_50a0f5802a15495aa3ab31427c4399d5",
+                {
+                    center: [40.71096, -73.95112],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c775829d03f44f0ead8c25a9b6db3c16 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_50a0f5802a15495aa3ab31427c4399d5);
+        
+    
+            var marker_6b9e91ea445e4047b852f1eea24a812c = L.marker(
+                [40.71096, -73.95112],
+                {}
+            ).addTo(map_50a0f5802a15495aa3ab31427c4399d5);
+        
+    
+            var icon_6a689e7305a44e2191a1dc6701bfac64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6b9e91ea445e4047b852f1eea24a812c.setIcon(icon_6a689e7305a44e2191a1dc6701bfac64);
+        
+    
+            marker_6b9e91ea445e4047b852f1eea24a812c.bindTooltip(
+                `<div>
+                     GRAND STREET & UNION AVENUE:	17 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f93040c8bdf4b1c9a1d09ef258e12a2 = L.marker(
+                [40.71096, -73.95113],
+                {}
+            ).addTo(map_50a0f5802a15495aa3ab31427c4399d5);
+        
+    
+            var icon_72b43d11e649454b80aad909919e0b90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f93040c8bdf4b1c9a1d09ef258e12a2.setIcon(icon_72b43d11e649454b80aad909919e0b90);
+        
+    
+            marker_8f93040c8bdf4b1c9a1d09ef258e12a2.bindTooltip(
+                `<div>
+                     GRAND STREET & UNION AVENUE:	17 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

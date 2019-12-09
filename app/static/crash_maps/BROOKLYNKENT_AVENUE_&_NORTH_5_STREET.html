@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9241daa62b6e439fa86d947b9ab4714c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9241daa62b6e439fa86d947b9ab4714c" ></div>
+        
+</body>
+<script>    
+    
+            var map_9241daa62b6e439fa86d947b9ab4714c = L.map(
+                "map_9241daa62b6e439fa86d947b9ab4714c",
+                {
+                    center: [40.71923, -73.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f1e5679a8aa4eed842569900113a398 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9241daa62b6e439fa86d947b9ab4714c);
+        
+    
+            var marker_0108f4f71d194d968c6226abea1479e9 = L.marker(
+                [40.71923, -73.9629],
+                {}
+            ).addTo(map_9241daa62b6e439fa86d947b9ab4714c);
+        
+    
+            var icon_904bcede6b254713be5ba3cb4b9fbe10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0108f4f71d194d968c6226abea1479e9.setIcon(icon_904bcede6b254713be5ba3cb4b9fbe10);
+        
+    
+            marker_0108f4f71d194d968c6226abea1479e9.bindTooltip(
+                `<div>
+                     KENT AVENUE & NORTH 5 STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a82e20b663e4bba94306aa442a11971 = L.marker(
+                [40.71923, -73.96291],
+                {}
+            ).addTo(map_9241daa62b6e439fa86d947b9ab4714c);
+        
+    
+            var icon_262449d7222a4f2b8f380e408250b879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a82e20b663e4bba94306aa442a11971.setIcon(icon_262449d7222a4f2b8f380e408250b879);
+        
+    
+            marker_4a82e20b663e4bba94306aa442a11971.bindTooltip(
+                `<div>
+                     KENT AVENUE & NORTH 5 STREET:	10 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

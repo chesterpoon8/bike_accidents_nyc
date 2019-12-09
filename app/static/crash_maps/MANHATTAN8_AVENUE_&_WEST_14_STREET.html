@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f9adde0b8ec41aab5a840e129bf68ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7f9adde0b8ec41aab5a840e129bf68ee" ></div>
+        
+</body>
+<script>    
+    
+            var map_7f9adde0b8ec41aab5a840e129bf68ee = L.map(
+                "map_7f9adde0b8ec41aab5a840e129bf68ee",
+                {
+                    center: [40.73975, -74.00252],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_565eb9f7e444452591ae22d62c313758 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7f9adde0b8ec41aab5a840e129bf68ee);
+        
+    
+            var marker_bf13c5b0cdbe4c168f0e44b117dfa7d8 = L.marker(
+                [40.73975, -74.00252],
+                {}
+            ).addTo(map_7f9adde0b8ec41aab5a840e129bf68ee);
+        
+    
+            var icon_f96f48d6032d409bb7f5684f1926eb38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bf13c5b0cdbe4c168f0e44b117dfa7d8.setIcon(icon_f96f48d6032d409bb7f5684f1926eb38);
+        
+    
+            marker_bf13c5b0cdbe4c168f0e44b117dfa7d8.bindTooltip(
+                `<div>
+                     8 AVENUE & WEST 14 STREET:	18 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b326d3d246cb442abdac0202d548ad12 = L.marker(
+                [40.73975, -74.00253],
+                {}
+            ).addTo(map_7f9adde0b8ec41aab5a840e129bf68ee);
+        
+    
+            var icon_7558420fc1034d44a43d00a89c352382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b326d3d246cb442abdac0202d548ad12.setIcon(icon_7558420fc1034d44a43d00a89c352382);
+        
+    
+            marker_b326d3d246cb442abdac0202d548ad12.bindTooltip(
+                `<div>
+                     8 AVENUE & WEST 14 STREET:	18 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

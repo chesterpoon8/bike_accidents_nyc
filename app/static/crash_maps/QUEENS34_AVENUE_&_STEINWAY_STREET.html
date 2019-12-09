@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_82310c692585473bb27ad3714748f1eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_82310c692585473bb27ad3714748f1eb" ></div>
+        
+</body>
+<script>    
+    
+            var map_82310c692585473bb27ad3714748f1eb = L.map(
+                "map_82310c692585473bb27ad3714748f1eb",
+                {
+                    center: [40.75668, -73.92086],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_610c41f03c7e423baae1afc18713a90b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_82310c692585473bb27ad3714748f1eb);
+        
+    
+            var marker_0477c8d8add5445fbb191e4eb87405bd = L.marker(
+                [40.75668, -73.92086],
+                {}
+            ).addTo(map_82310c692585473bb27ad3714748f1eb);
+        
+    
+            var icon_e60ebc8e861e4d21804a31115c641e09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0477c8d8add5445fbb191e4eb87405bd.setIcon(icon_e60ebc8e861e4d21804a31115c641e09);
+        
+    
+            marker_0477c8d8add5445fbb191e4eb87405bd.bindTooltip(
+                `<div>
+                     34 AVENUE & STEINWAY STREET:	11 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad946e9230a14161b3bb2dcdc8e2acbc = L.marker(
+                [40.75668, -73.92088],
+                {}
+            ).addTo(map_82310c692585473bb27ad3714748f1eb);
+        
+    
+            var icon_e41428d1393048ed8210688c156c8e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ad946e9230a14161b3bb2dcdc8e2acbc.setIcon(icon_e41428d1393048ed8210688c156c8e52);
+        
+    
+            marker_ad946e9230a14161b3bb2dcdc8e2acbc.bindTooltip(
+                `<div>
+                     34 AVENUE & STEINWAY STREET:	11 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

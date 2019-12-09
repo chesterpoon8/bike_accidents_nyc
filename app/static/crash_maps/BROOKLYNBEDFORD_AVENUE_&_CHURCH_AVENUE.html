@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db7968c8068e40aea981221a730a7b36 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_db7968c8068e40aea981221a730a7b36" ></div>
+        
+</body>
+<script>    
+    
+            var map_db7968c8068e40aea981221a730a7b36 = L.map(
+                "map_db7968c8068e40aea981221a730a7b36",
+                {
+                    center: [40.65053, -73.95582],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72a6bb51e0df4ed8adc968f415bb75d2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_db7968c8068e40aea981221a730a7b36);
+        
+    
+            var marker_57cc748195814c1ba6906a9fb07b1276 = L.marker(
+                [40.65053, -73.95582],
+                {}
+            ).addTo(map_db7968c8068e40aea981221a730a7b36);
+        
+    
+            var icon_69b76340698c4312bba7c9eb55a727d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_57cc748195814c1ba6906a9fb07b1276.setIcon(icon_69b76340698c4312bba7c9eb55a727d4);
+        
+    
+            marker_57cc748195814c1ba6906a9fb07b1276.bindTooltip(
+                `<div>
+                     BEDFORD AVENUE & CHURCH AVENUE:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f79ca7fe54746a59bfbace17c2ecca8 = L.marker(
+                [40.65053, -73.95583],
+                {}
+            ).addTo(map_db7968c8068e40aea981221a730a7b36);
+        
+    
+            var icon_89e91e8873e442a99c03d2d18c9d89d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4f79ca7fe54746a59bfbace17c2ecca8.setIcon(icon_89e91e8873e442a99c03d2d18c9d89d5);
+        
+    
+            marker_4f79ca7fe54746a59bfbace17c2ecca8.bindTooltip(
+                `<div>
+                     BEDFORD AVENUE & CHURCH AVENUE:	13 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

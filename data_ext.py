@@ -13,6 +13,7 @@ import requests
 import time
 from app_token import app_token
 from bs4 import BeautifulSoup
+from crash import Crash
 
 def main():
 
@@ -186,6 +187,8 @@ def main():
                  .rename(columns={'accident_date':'Number of Bike Accidents'})
                 )
 
+
+
     # For the table
     dang_int_viz = (dang_int[dang_int['Number of Bike Accidents'] >= 10]
                 .copy()
@@ -193,15 +196,39 @@ def main():
                 .rename(columns={'borough':'Borough','intersection':'Intersection'})
                )
 
-    with open('app/static/crash_table.html', 'r') as f:
-        html = BeautifulSoup(f,"lxml")
+    for i in dang_int_viz.index:
+        Crash(dang_int_viz.iloc[i].Borough,
+              dang_int_viz.iloc[i].Intersection).create_map().save('app/static/crash_maps/'+
+                                                                   dang_int_viz.iloc[i].Borough+
+                                                                   dang_int_viz.iloc[i].Intersection.replace(' ','_')+
+                                                                   '.html')
 
-    table_html = BeautifulSoup(dang_int_viz.to_html(index=False),"lxml")
+    dang_int_viz.Intersection = dang_int_viz.apply(lambda x: '<a href={} target="iframe_map">{}</a>'.format('../static/crash_maps/'+
+                                                                                                            x.Borough+x.Intersection.replace(' ','_')+
+                                                                                                            '.html',
+                                                                                                            x.Intersection), axis=1)
 
-    html.body.clear()
+    html = """<table border="1" class="dataframe">
+    <thead>
+    <tr style="text-align: right;">
+    <th>Borough</th>
+    <th>Intersection</th>
+    <th>Number of Bike Accidents</th>
+    </tr>
+    </thead>
+    <tbody>
+    """
+    for i in dang_int_viz.index:
+        html = (html +
+                '<tr><td>'+
+                dang_int_viz.iloc[i].Borough+'</td><td>'+
+                dang_int_viz.iloc[i].Intersection+'</td><td>'+
+                str(dang_int_viz.iloc[i]['Number of Bike Accidents'])+'</td></tr>')
+    html = html+"</tbody></table>"
+    html = BeautifulSoup(html,"lxml")
+
     html.body.insert(0,BeautifulSoup('<link rel="stylesheet" href="/static/style.css">',"lxml"))
-    html.body.insert(1,table_html)
-    
+
     with open('app/static/crash_table.html', 'w') as f:
         f.write(str(html))
 
@@ -215,6 +242,8 @@ def main():
     dang_int = pd.merge(dang_int, lat_lon,
                         on='intersection', how='left')
 
+    dang_int.to_csv('app/static/dang_int.csv', index=False)
+
     dang_int_10 = (dang_int[(dang_int['Number of Bike Accidents'] >= 10) &
                            (dang_int['Number of Bike Accidents'] < 15)]
                   .reset_index(drop=True))
@@ -223,8 +252,6 @@ def main():
                   .reset_index(drop=True))
     dang_int_20 = (dang_int[dang_int['Number of Bike Accidents'] >= 20]
                   .reset_index(drop=True))
-
-
 
     features = [
         {
@@ -286,11 +313,11 @@ def main():
 
     # Add bike lanes
     folium.PolyLine(bl_prot_json, weight=1, opacity=0.9, color='lime').add_to(folium
-                                                         .FeatureGroup(name='Protected Bike Lanes', overlay=False)
+                                                         .FeatureGroup(name='Protected Bike Lanes')
                                                          .add_to(nyc_map))
 
     folium.PolyLine(bl_stand_json, weight=1, opacity=0.9, color='yellow').add_to(folium
-                                                         .FeatureGroup(name='Non-Protected Bike Lanes', overlay=False)
+                                                         .FeatureGroup(name='Non-Protected Bike Lanes')
                                                          .add_to(nyc_map))
 
     # Add citibike routes
@@ -299,7 +326,7 @@ def main():
                                                          .add_to(nyc_map))
 
     # Add Dangerous intersections data
-    over10 = folium.FeatureGroup(name='Intersections w/10-14 Accidents')
+    over10 = folium.FeatureGroup(name='Intersections w/10-14 Accidents', overlay=False)
     for i in dang_int_10.index:
         over10.add_child(folium.Marker(dang_int_10.lat_lon_list[i],
                                        tooltip=(dang_int_10.intersection[i] + ':\t' +
@@ -309,7 +336,7 @@ def main():
                                        icon=folium.Icon(color='red', prefix='fa', icon='fas fa-bicycle')
                                       )
                            )
-    over15 = folium.FeatureGroup(name='Intersections w/15-19 Accidents')
+    over15 = folium.FeatureGroup(name='Intersections w/15-19 Accidents', overlay=False)
     for i in dang_int_15.index:
         over15.add_child(folium.Marker(dang_int_15.lat_lon_list[i],
                                        tooltip=(dang_int_15.intersection[i] + ':\t' +
@@ -319,7 +346,7 @@ def main():
                                        icon=folium.Icon(color='red', prefix='fa', icon='fas fa-bicycle')
                                       )
                            )
-    over20 = folium.FeatureGroup(name='Intersections w/20 or More Accidents')
+    over20 = folium.FeatureGroup(name='Intersections w/20 or More Accidents', overlay=False)
     for i in dang_int_20.index:
         over20.add_child(folium.Marker(dang_int_20.lat_lon_list[i],
                                        tooltip=(dang_int_20.intersection[i] + ':\t' +

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd217342d95d4c9e9333b7f3a3e44ff2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dd217342d95d4c9e9333b7f3a3e44ff2" ></div>
+        
+</body>
+<script>    
+    
+            var map_dd217342d95d4c9e9333b7f3a3e44ff2 = L.map(
+                "map_dd217342d95d4c9e9333b7f3a3e44ff2",
+                {
+                    center: [40.75998, -73.9648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa7e0b21a71b4e6090057cedadd61d45 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dd217342d95d4c9e9333b7f3a3e44ff2);
+        
+    
+            var marker_5645936fb0d14465a68f11548165479e = L.marker(
+                [40.75998, -73.9648],
+                {}
+            ).addTo(map_dd217342d95d4c9e9333b7f3a3e44ff2);
+        
+    
+            var icon_cdf1753339a547b1af8266d3c4f5cfd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5645936fb0d14465a68f11548165479e.setIcon(icon_cdf1753339a547b1af8266d3c4f5cfd3);
+        
+    
+            marker_5645936fb0d14465a68f11548165479e.bindTooltip(
+                `<div>
+                     2 AVENUE & EAST 58 STREET:	14 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8efce807e37e4d3ebae873acbef8e9e8 = L.marker(
+                [40.75998, -73.96481],
+                {}
+            ).addTo(map_dd217342d95d4c9e9333b7f3a3e44ff2);
+        
+    
+            var icon_6a705ca21cbf45ea823519dc9029dabd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8efce807e37e4d3ebae873acbef8e9e8.setIcon(icon_6a705ca21cbf45ea823519dc9029dabd);
+        
+    
+            marker_8efce807e37e4d3ebae873acbef8e9e8.bindTooltip(
+                `<div>
+                     2 AVENUE & EAST 58 STREET:	14 Accidents
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
