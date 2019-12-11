@@ -8,8 +8,8 @@ dang_int.lat_lon_list = dang_int.lat_lon_list.apply(lambda x: [float(x.split(', 
 
 
 def initialize_map(coordinates):
-    nyc_map = folium.Map(location=coordinates,zoom_start=16, tiles=None)
-    folium.TileLayer('cartodbdark_matter',control=False).add_to(nyc_map)
+    nyc_map = folium.Map(location=coordinates,zoom_start=16)
+    # folium.TileLayer('cartodbdark_matter',control=False).add_to(nyc_map)
     return nyc_map
 
 
