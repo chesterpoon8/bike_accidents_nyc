@@ -25,4 +25,4 @@ srsly==0.0.7
 urllib3==1.24.1
 virtualenv==16.7.5
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
