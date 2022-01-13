@@ -19,7 +19,7 @@ numpy==1.15.4
 numpydoc==0.8.0
 pandas==0.24.0
 pathlib2==2.3.3
-Pillow==5.4.1
+Pillow==9.0.0
 plotly==4.1.0
 srsly==0.0.7
 urllib3==1.24.1
